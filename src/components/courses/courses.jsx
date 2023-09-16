@@ -3,9 +3,11 @@ import { useState } from "react";
 import "./courses.css"
 import { FiDollarSign } from 'react-icons/fi';
 import { BsBook } from 'react-icons/bs';
-import Cart from "../cart/cart";
-const Courses = () => {
+const Courses = ({handleAdd}) => {
    const[courses,setCourses]=useState([])
+  
+
+
 
    useEffect(()=>{
     fetch('./course.json')
@@ -13,8 +15,10 @@ const Courses = () => {
      .then(data => setCourses(data))
    },[])
 
+ 
+
     return (
-        <div className="flex mx-16 gap-6 text-center">
+        <div className="">
         <div className="grid grid-cols-3 gap-6">
         {
             courses.map((course)=>(
@@ -28,7 +32,7 @@ const Courses = () => {
                         <BsBook/>
                         <h2 className="text-base font-medium">Credit:{course.duration}hr</h2>
                     </div>
-                    <button className=" mt-4 px-28 py-2 rounded-lg bg-blue-600 text-white text-center">Select</button>
+                    <button onClick={()=>handleAdd(course)} className=" mt-4 px-28 py-2 rounded-lg bg-blue-600 text-white text-center">Select</button>
                 </div>
             )
                
@@ -37,7 +41,7 @@ const Courses = () => {
          
         </div>
 
-        <Cart></Cart>
+        
 
         
         </div>
