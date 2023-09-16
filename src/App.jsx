@@ -1,15 +1,16 @@
 
 
 import './App.css'
+import Courses from './components/courses/courses'
+import Header from './components/header/header'
 
 function App() {
   
 
   return (
     <div>
-   
-      <h1 className='text-3xl font-bold text-center py-12'>Course Registration</h1>
-      
+      <Header></Header>
+      <Courses></Courses>
     </div>
   )
 }
