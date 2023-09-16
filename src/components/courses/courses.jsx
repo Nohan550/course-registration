@@ -3,6 +3,7 @@ import { useState } from "react";
 import "./courses.css"
 import { FiDollarSign } from 'react-icons/fi';
 import { BsBook } from 'react-icons/bs';
+import Cart from "../cart/cart";
 const Courses = () => {
    const[courses,setCourses]=useState([])
 
@@ -25,7 +26,7 @@ const Courses = () => {
                     <FiDollarSign/>
                         <h2 className="text-base font-medium">Price:{course.price}</h2>
                         <BsBook/>
-                        <h2 className="text-base font-medium">Credit:{course.duration}</h2>
+                        <h2 className="text-base font-medium">Credit:{course.duration}hr</h2>
                     </div>
                     <button className=" mt-4 px-28 py-2 rounded-lg bg-blue-600 text-white text-center">Select</button>
                 </div>
@@ -36,9 +37,7 @@ const Courses = () => {
          
         </div>
 
-
-
-        <div>hekhkdfhdfsdf</div>
+        <Cart></Cart>
 
         
         </div>
