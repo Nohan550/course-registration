@@ -55,7 +55,7 @@ function App() {
   return (
     <div>
       <Header></Header>
-      <div className='flex mx-16 gap-6 text-center'>
+      <div className='body'>
         <Courses handleAdd={handleAdd}></Courses>
       <Carts selectCourse={selectCourse} remaining={remaining} total={total} totalPrice={totalPrice}></Carts>
     

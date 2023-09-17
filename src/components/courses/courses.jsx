@@ -18,21 +18,21 @@ const Courses = ({handleAdd}) => {
  
 
     return (
-        <div className="">
-        <div className="grid grid-cols-3 gap-6">
+        <div >
+        <div className="container">
         {
             courses.map((course)=>(
-                <div className="w-80 bg-white rounded-xl p-4 " key={course.id}>
-                    <img className="w-72 h-36 rounded-lg" src={course.img} alt="" />
-                    <h1 className="text-lg font-semibold py-4" >{course.title}</h1>
-                    <p className="text-sm font-normal">{course.description}</p>
-                    <div className="flex  py-3 items-center justify-around">
+                <div className="card-container " key={course.id}>
+                    <img className=" img" src={course.img} alt="" />
+                    <h1 className="title" >{course.title}</h1>
+                    <p className="des">{course.description}</p>
+                    <div className="info">
                     <FiDollarSign/>
-                        <h2 className="text-base font-medium">Price:{course.price}</h2>
+                        <h2 className="infos">Price:{course.price}</h2>
                         <BsBook/>
-                        <h2 className="text-base font-medium">Credit:{course.duration}hr</h2>
+                        <h2 className="infos">Credit:{course.duration}hr</h2>
                     </div>
-                    <button onClick={()=>handleAdd(course)} className=" mt-4 px-28 py-2 rounded-lg bg-blue-600 text-white text-center">Select</button>
+                    <button onClick={()=>handleAdd(course)} className="btn">Select</button>
                 </div>
             )
                

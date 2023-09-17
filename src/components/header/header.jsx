@@ -1,9 +1,9 @@
-
+import "./header.css"
 
 const Header = () => {
     return (
-        <div>
-             <h1 className='text-3xl font-bold text-center py-12'>Course Registration</h1>
+        <div className="header">
+             <h1>Course Registration </h1>
       
         </div>
     );

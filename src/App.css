@@ -1,0 +1,7 @@
+.body{
+    
+    display: flex;
+    text-align: center;
+    gap: 14px;
+    margin:0 64px 0 64px ;
+}

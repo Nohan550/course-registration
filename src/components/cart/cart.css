@@ -1,0 +1,47 @@
+.cart-container{
+    
+     background-color: white;
+     border-radius:12px ;
+     font-size: 18px;
+     font-weight: 700;
+     height: fit-content;
+     padding: 0 28px 0 28px;
+     width: 320px;
+} 
+.remaining{
+    text-align: start;
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    color: #2F80ED;
+    border-bottom: 1px solid gray;
+    
+}
+.course-container{
+    text-align: start;
+    font-size: 20px;
+    font-size: 700;
+    padding: 20px 48px 20px 0;
+}
+.course-title{
+    text-align: start ;
+    font-size: 16px;
+    font-weight: 400;
+    padding-bottom:24px ;
+    border-bottom:  1px solid gray;
+}
+.total-credit{
+    
+    text-align: start;
+    font-size: 16px;
+    font-weight:500 ;
+    padding: 16px 0 16px 0;
+    border-bottom: 1px solid gray;
+}
+.total-price{
+   text-align: start;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 20px 56px 20px 0;
+}
