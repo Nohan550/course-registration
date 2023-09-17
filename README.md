@@ -1,8 +1,7 @@
-# React + Vite
+## Project Features
+-You can add courses of your choice.
+-You will be constantly show your total credit and remaining credit.
+-It will give you alert when you repeat  selected course and when your credit reached it's limit.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## State Management
+First,I destructured the useState hook,then I assigned the variable and function to particular jsx.

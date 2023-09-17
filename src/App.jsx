@@ -20,7 +20,11 @@ function App() {
     let total = course.duration;
     let totalPrice = course.price
     if(doesExist){
-      return
+      return Swal.fire(
+        'Sorry!',
+         'You have already added this',
+         'warning'
+       )
     }   
     
    else{
